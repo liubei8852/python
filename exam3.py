@@ -4,8 +4,8 @@ import sys
 import math
 import argparse
 parser=argparse.ArgumentParser(prog='stat python ',usage='%(prog)s [opthions] [value]',description='stat base num!')
-parser.add_argument('-i','--in',help='the physical file ',required=True,metavar='')
-parser.add_argument('-o','--out',help='the genetic file ',required=True,metavar='')
+parser.add_argument('-i','--in',help='the input file ',required=True,metavar='')
+parser.add_argument('-o','--out',help='the output file ',required=True,metavar='')
 argv=vars(parser.parse_args())
 in_file=argv['in'].strip()
 out_file=argv['out'].strip()
