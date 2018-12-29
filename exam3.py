@@ -13,8 +13,8 @@ f1=open(in_file).readlines()
 f2=open(out_file,'w')
 
 for reads in f1:
-  n1=len(reads)
-    #n1=reads.count("G")
+  #n1=len(reads)
+  n1=reads.count("G")
   for i in range (1,n1):
     if (4*i+1>n1):
       break
